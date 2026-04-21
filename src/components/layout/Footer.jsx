@@ -1,4 +1,5 @@
 // import { Twitter, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Zap } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -6,9 +7,15 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
         {/* Column 1: Brand */}
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-brandYellow text-2xl font-bold">⚡ Eventria</span>
-          </div>
+         <div className="flex items-center gap-2 text-2xl font-bold">
+  <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+    <Zap size={18} className="text-white fill-white" />
+  </div>
+
+  <span className="text-white">
+    Event<span className="text-purple-400">ria</span>
+  </span>
+</div>
           <p className="text-gray-400 text-sm leading-relaxed">
             Revolutionizing event management with real-time engagement tools for unforgettable experiences.
           </p>
